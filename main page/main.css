@@ -1,0 +1,43 @@
+/*-----Global-----*/
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    
+}
+
+/*-----header-----*/
+
+header nav {
+    background-color: white;
+    height: inherit;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header nav ul li{  
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+header nav ul li a {
+    padding: 13px;
+    display: block;
+    text-decoration: none;
+}
+
+header nav ul li a:active , a:hover {
+    background-color: tomato;
+} 
