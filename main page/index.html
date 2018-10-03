@@ -13,7 +13,7 @@
       
         <header>
             <nav>
-                <ul>
+                <ul id="navbar">
                     <li><a class="active" href="#aboutme">About me</a></li>
                     <li><a href="#whatIDo">What I do</a></li>
                     <li><a href="#contact">Contact me</a></li>
@@ -66,6 +66,31 @@
                     </form>    
                 </div>
             </section>
+            
+            <footer>
+                <p>Made By Me ©</p>
+               
+            </footer>
         </div>
+        
+        <script>
+            // When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+        </script>
     </body>
 </html>

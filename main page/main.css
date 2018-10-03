@@ -9,6 +9,38 @@
                  /*-K2D-*/
 @import url('https://fonts.googleapis.com/css?family=K2D:300,400');
 
+/******custom scrollbar*******/
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
+
+
+
+
+
+
+
 
 /*-----Global-----*/
 
@@ -19,7 +51,17 @@
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
-    
+
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    -webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
 }
 
 /*-----header-----*/
@@ -54,11 +96,13 @@ header nav ul li a {
     padding: 13px;
     display: block;
     text-decoration: none;
-    
+    font-family: 'K2D', sans-serif;
+    color: black;
 }
 
 header nav ul li a:active , a:hover {
     background-color: tomato;
+    color: black;
 } 
 
 
@@ -66,7 +110,7 @@ header nav ul li a:active , a:hover {
 
 #aboutme{
     background-color: #383535;
-    
+    height: 99vh;
 }
 
 #aboutme img{
@@ -114,6 +158,7 @@ header nav ul li a:active , a:hover {
 
 #whatIDo{
     background-color: #D05050;
+    height: 99vh;
 }
 
 #whatIDo h1{
@@ -159,7 +204,9 @@ header nav ul li a:active , a:hover {
 
 .skills{
     text-align: center;
-    margin-bottom: 45px
+    margin-bottom: 45px;
+    font-family: 'K2D', sans-serif;
+    font-weight: lighter;
     
 }
 
@@ -195,7 +242,7 @@ button:hover, button:focus, button:active {
 
 #contact{
     display: block;
-    height: 95vh;
+    height: 88vh;
     width: 100%;
     background-color: #E7B52B;
 }
@@ -222,11 +269,16 @@ form{
     background: transparent;
     border: none;
     outline: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #707070;
     color: whitesmoke;
     font-size: 18px;
     margin-bottom: 16px;   
 }
+
+.form-control:focus{
+    border-bottom: 1px solid ;
+}
+
 
 input{
     height: 45px;
@@ -264,15 +316,31 @@ form .submit:hover{
 }
 
 
+/*----------footer-------------*/
+
+footer{
+    
+    background-color: #383535;
+    height: 5vh;
+}
+
+footer p {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Marck Script', cursive;
+    padding-top: 4px;
+}
 
 
 
 
 
 
-
-
-
-
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
 
