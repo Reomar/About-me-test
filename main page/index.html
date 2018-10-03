@@ -16,86 +16,56 @@
                 <ul>
                     <li><a class="active" href="#aboutme">About me</a></li>
                     <li><a href="#whatIDo">What I do</a></li>
-                    <li><a href="#">Contact me</a></li>
+                    <li><a href="#contact">Contact me</a></li>
                 </ul>    
             </nav>
         </header>
         
-        <section  id="aboutme">
-            <img src="$assets/Avatar.png">
-            <h2>I'AM</h2>
-            <h1>Omar Sakr</h1>
-            <p>/I am a student at faculty of commerce,<br/>I 🖤 programming,<br/>so I decided to complete learning alone/></p>
-        </section >
-        
-        <section  id="whatIDo">
-            <h1>What I Do</h1>
-            
-             <div id="skillcontainer">
-                <div id="skillset">
-                    
-                    <div id="web">
-                        <button>
-                            <img class="skillimg" src="$assets/webDes.png">
-                            <p class="skills">Web Desgining</p>
-                        </button>    
-                    </div>
+        <div class="content">
+            <section  id="aboutme">
+                <img src="$assets/Avatar.png">
+                <h2>I'AM</h2>
+                <h1>Omar Sakr</h1>
+                <p>/I am a student at faculty of commerce,<br/>I 🖤 programming,<br/>so I decided to complete learning alone/></p>
+            </section >
 
-                    <div id="android">
-                        <button>
-                             <img class="skillimg" src="$assets/Android.png">
-                            <p class="skills">Android Devolopment</p>
-                        </button>    
-                    </div>
-
-                    <div id="videdit">
-                        <button>
-                            <img class="skillimg" src="$assets/videdit.png">
-                            <p class="skills">Video editing</p>
-                        </button>    
+            <section  id="whatIDo">
+                <h1>What I Do</h1>
+                 <div id="skillcontainer">
+                    <div id="skillset">
+                        <div id="web">
+                            <button>
+                                <img class="skillimg" src="$assets/webDes.png">
+                                <p class="skills">Web Desgining</p>
+                            </button>    
+                        </div>
+                        <div id="android">
+                            <button>
+                                 <img class="skillimg" src="$assets/Android.png">
+                                <p class="skills">Android Devolopment</p>
+                            </button>    
+                        </div>
+                        <div id="videdit">
+                            <button>
+                                <img class="skillimg" src="$assets/videdit.png">
+                                <p class="skills">Video editing</p>
+                            </button>    
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        
-        <script>
-            (document).ready(function () {
-		$(document).on("scroll", onScroll);
- 
-		$('a[href^="#"]').on('click', function (e) {
-			e.preventDefault();
-			$(document).off("scroll");
- 
-			$('a').each(function () {
-				$(this).removeClass('active');
-			})
-			$(this).addClass('active');
- 
-			var target = this.hash;
-			$target = $(target);
-			$('html, body').stop().animate({
-				'scrollTop': $target.offset().top+2
-			}, 500, 'swing', function () {
-				window.location.hash = target;
-				$(document).on("scroll", onScroll);
-			});
-		});
-	});
- 
-	function onScroll(event){
-		var scrollPosition = $(document).scrollTop();
-		$('header nav ul li a').each(function () {
-			var currentLink = $(this);
-			var refElement = $(currentLink.attr("href"));
-			if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-				$('header nav ul li a').removeClass("active");
-				currentLink.addClass("active");
-			}
-			else{
-				currentLink.removeClass("active");
-			}
-		});
-	}
-        </script>
+            </section>
+            
+            <section id="contact">
+                <h1>Contact me</h1> 
+                <div class="contact-form">
+                    <form id="contact-form" method="" action="">
+                        <input name="name" type="text" class="form-control" placeholder="Name" required><br>
+                        <input name="email" type="email" class="form-control" placeholder="Email" required><br>
+                        <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+                        <input type="submit" class="form-control submit" value="SEND MESSAGE">
+                    </form>    
+                </div>
+            </section>
+        </div>
     </body>
 </html>
