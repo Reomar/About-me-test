@@ -1,3 +1,11 @@
+/******External librares******/
+
+         /*-Mark Script font-*/
+@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+            /*-Luceist Guy-*/
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+
+
 /*-----Global-----*/
 
 *{
@@ -41,3 +49,73 @@ header nav ul li a {
 header nav ul li a:active , a:hover {
     background-color: tomato;
 } 
+
+
+/*---About Me-----*/
+
+#aboutme{
+    background-color: #383535;
+}
+
+#aboutme img{
+    display: block;
+    width: 20em;
+    height: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+}
+
+#aboutme h1{
+    position: relative;
+    font-family: 'Marck Script', cursive;
+    font-size: 50px;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+#aboutme h2{
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%px);
+     -webkit-transform: translateX(-50%);
+    font-size: 150px;
+    font-family: 'Luckiest Guy', cursive;
+    color: #2E2D2D;
+}
+
+#aboutme p{
+    text-align: center;
+    margin-top: 2em;
+    font-family: 'Marck Script', cursive;
+    font-size: 30px;
+    color: whitesmoke;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
