@@ -25,6 +25,11 @@
 header nav {
     background-color: white;
     height: inherit;
+    overflow: hidden;
+    position: fixed;
+    min-width: 100%;
+    z-index: 1;
+
 }
 
 header nav ul {
@@ -34,6 +39,7 @@ header nav ul {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 4px
 }
 
 header nav ul li{  
@@ -46,6 +52,7 @@ header nav ul li a {
     padding: 13px;
     display: block;
     text-decoration: none;
+    
 }
 
 header nav ul li a:active , a:hover {
@@ -57,6 +64,7 @@ header nav ul li a:active , a:hover {
 
 #aboutme{
     background-color: #383535;
+    
 }
 
 #aboutme img{
@@ -112,7 +120,7 @@ header nav ul li a:active , a:hover {
     text-align: center;
     font-size: 6em;
     color: whitesmoke;
-    padding-top: 0.5em;
+    padding-top: 100px;
 }
 
 #skillcontainer{
@@ -130,7 +138,6 @@ header nav ul li a:active , a:hover {
     margin-top: 200px;
     
 }
-
 
 .skillimg{
     width: 100px;
@@ -164,8 +171,6 @@ button{
     outline: inherit;
 }
 
-
-    
 button {
   display: inline-block;
   vertical-align: middle;
@@ -177,9 +182,10 @@ button {
   -webkit-transition-property: transform;
   transition-property: transform;
 }
+
 button:hover, button:focus, button:active {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
     
     

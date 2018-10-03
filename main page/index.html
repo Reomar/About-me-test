@@ -14,21 +14,21 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">What I do</a></li>
+                    <li><a class="active" href="#aboutme">About me</a></li>
+                    <li><a href="#whatIDo">What I do</a></li>
                     <li><a href="#">Contact me</a></li>
                 </ul>    
             </nav>
         </header>
         
-        <div id="aboutme">
+        <section  id="aboutme">
             <img src="$assets/Avatar.png">
             <h2>I'AM</h2>
             <h1>Omar Sakr</h1>
             <p>/I am a student at faculty of commerce,<br/>I 🖤 programming,<br/>so I decided to complete learning alone/></p>
-        </div>
+        </section >
         
-        <div id="whatIDo">
+        <section  id="whatIDo">
             <h1>What I Do</h1>
             
              <div id="skillcontainer">
@@ -56,7 +56,46 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         
+        <script>
+            (document).ready(function () {
+		$(document).on("scroll", onScroll);
+ 
+		$('a[href^="#"]').on('click', function (e) {
+			e.preventDefault();
+			$(document).off("scroll");
+ 
+			$('a').each(function () {
+				$(this).removeClass('active');
+			})
+			$(this).addClass('active');
+ 
+			var target = this.hash;
+			$target = $(target);
+			$('html, body').stop().animate({
+				'scrollTop': $target.offset().top+2
+			}, 500, 'swing', function () {
+				window.location.hash = target;
+				$(document).on("scroll", onScroll);
+			});
+		});
+	});
+ 
+	function onScroll(event){
+		var scrollPosition = $(document).scrollTop();
+		$('header nav ul li a').each(function () {
+			var currentLink = $(this);
+			var refElement = $(currentLink.attr("href"));
+			if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+				$('header nav ul li a').removeClass("active");
+				currentLink.addClass("active");
+			}
+			else{
+				currentLink.removeClass("active");
+			}
+		});
+	}
+        </script>
     </body>
 </html>
