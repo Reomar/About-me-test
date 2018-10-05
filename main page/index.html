@@ -6,91 +6,119 @@
         <meta name="viewport" content="width=device-width,initial-scale=1"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <link rel="stylesheet" href="node_modules/sal.js/dist/sal.css"/>
         <title>Omar Sakr</title>
     </head>
-    
     <body>
-      
-        <header>
-            <nav>
-                <ul id="navbar">
-                    <li><a class="active" href="#aboutme">About me</a></li>
-                    <li><a href="#whatIDo">What I do</a></li>
-                    <li><a href="#contact">Contact me</a></li>
-                </ul>    
-            </nav>
-        </header>
-        
-        <div class="content">
-            <section  id="aboutme">
-                <img src="$assets/Avatar.png">
-                <h2>I'AM</h2>
-                <h1>Omar Sakr</h1>
-                <p>/I am a student at faculty of commerce,<br/>I 🖤 programming,<br/>so I decided to complete learning alone/></p>
-            </section >
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="#aboutme">About me</a></li>
+                        <li><a href="#whatIDo">What I do</a></li>
+                        <li><a href="#contact">Contact me</a></li>
+                    </ul>    
+                </nav>
+            </header>
 
-            <section  id="whatIDo">
-                <h1>What I Do</h1>
-                 <div id="skillcontainer">
-                    <div id="skillset">
-                        <div id="web">
-                            <button>
-                                <img class="skillimg" src="$assets/webDes.png">
-                                <p class="skills">Web Desgining</p>
-                            </button>    
-                        </div>
-                        <div id="android">
-                            <button>
-                                 <img class="skillimg" src="$assets/Android.png">
-                                <p class="skills">Android Devolopment</p>
-                            </button>    
-                        </div>
-                        <div id="videdit">
-                            <button>
-                                <img class="skillimg" src="$assets/videdit.png">
-                                <p class="skills">Video editing</p>
-                            </button>    
+            <div class="content">
+                <section  id="aboutme">
+                    <img src="$assets/Avatar.png"
+                            data-sal-duration = "2000"
+                            data-sal="fade"
+                            data-sal-delay="600"
+                            data-sal-easing="ease-out-bounce">
+                    <h2>I'AM</h2>
+                    <h1
+                            data-sal-duration = "1200"
+                            data-sal="slide-up"
+                            data-sal-delay="300"
+                            data-sal-easing="ease-out-bounce"
+                        >Omar Sakr</h1>
+                    <p
+                       data-sal-duration = "1200"
+                            data-sal="slide-up"
+                            data-sal-delay="700"
+                            data-sal-easing="ease-out-bounce"
+                       >/I am a student at faculty of commerce,<br/>I 🖤 programming,<br/>so I decided to complete learning alone/></p>
+                </section >
+
+                <section  id="whatIDo">
+                    <h1
+                            data-sal-duration = "1200"
+                            data-sal="fade"
+                            data-sal-delay="300"
+                            data-sal-easing="ease-out-bounce">What I Do</h1>
+                     <div id="skillcontainer">
+                    
+                        <div id="skillset">
+                            <div id="web"
+                                 data-sal-duration = "1200"
+                                 data-sal="slide-up"
+                                 data-sal-easing="ease-out-bounce"
+                                 data-sal-delay="500">
+                                <a href="O:\Front End devoping\profile v2\webdes\webdesIndex.html" class="skillbutton">
+                                    <button>
+                                        <img class="skillimg" src="$assets/webDes.png">
+                                        <p class="skills">Web Desgining</p>
+                                    </button> 
+                                </a>    
+                            </div>
+                            <div id="android"
+                                 data-sal-duration = "1200"
+                                 data-sal="slide-up"
+                                 data-sal-easing="ease-out-bounce"
+                                 data-sal-delay="700">
+                                <a href="O:\Front End devoping\profile v2\android\androidIndex.html" class="skillbutton">
+                                    <button>
+                                         <img class="skillimg" src="$assets/Android.png">
+                                        <p class="skills">Android Devolopment</p>
+                                    </button> 
+                                </a>    
+                            </div>
+                            <div id="videdit"
+                                 data-sal-duration = "1200"
+                                data-sal="slide-up"
+                                data-sal-easing="ease-out-bounce"
+                                 data-sal-delay="900">
+                                <a href="O:\Front End devoping\profile v2\videdit\videditIndex.html" class="skillbutton">
+                                    <button>
+                                        <img class="skillimg" src="$assets/videdit.png">
+                                        <p class="skills">Video editing</p>
+                                    </button> 
+                                </a>    
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            
-            <section id="contact">
-                <h1>Contact me</h1> 
-                <div class="contact-form">
-                    <form id="contact-form" method="" action="">
-                        <input name="name" type="text" class="form-control" placeholder="Name" required><br>
-                        <input name="email" type="email" class="form-control" placeholder="Email" required><br>
-                        <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
-                        <input type="submit" class="form-control submit" value="SEND MESSAGE">
-                    </form>    
-                </div>
-            </section>
-            
-            <footer>
-                <p>Made By Me ©</p>
-               
-            </footer>
-        </div>
+                </section>
+
+                <section id="contact">
+                    <h1
+                        data-sal-duration = "1000"
+                            data-sal="zoom-in"
+                            data-sal-delay="100"
+                            data-sal-easing="ease-out-bounce">Contact me</h1> 
+                    <div class="contact-form"
+                            data-sal-duration = "1200"
+                            data-sal="slide-up"
+                            data-sal-delay="300"
+                            data-sal-easing="ease-out-bounce">
+                        <form id="contact-form" method="POST" action="">
+                            <input name="name" type="text" class="form-control" placeholder="Name" required><br>
+                            <input name="email" type="email" class="form-control" placeholder="Email" required><br>
+                            <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+                            <input type="submit" class="form-control submit" value="SEND MESSAGE">
+                        </form>    
+                    </div>
+                </section>
+
+                <footer>
+                    <p>Made By Me ©</p>               
+                </footer>
+            </div>
+        <script src="node_modules/sal.js/dist/sal.js"></script>
         
         <script>
-            // When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
-
-// Get the navbar
-var navbar = document.getElementById("navbar");
-
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+            sal();
         </script>
     </body>
 </html>

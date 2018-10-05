@@ -100,7 +100,7 @@ header nav ul li a {
     color: black;
 }
 
-header nav ul li a:active , a:hover {
+header nav ul li a:active ,header nav ul li a:hover {
     background-color: tomato;
     color: black;
 } 
@@ -168,6 +168,7 @@ header nav ul li a:active , a:hover {
     font-size: 6em;
     color: whitesmoke;
     padding-top: 100px;
+    margin-bottom: 200px;
 }
 
 #skillcontainer{
@@ -182,8 +183,6 @@ header nav ul li a:active , a:hover {
     flex-grow: 1;
     flex-wrap: wrap;
     padding-bottom: 50px;
-    margin-top: 200px;
-    
 }
 
 .skillimg{
@@ -208,6 +207,10 @@ header nav ul li a:active , a:hover {
     font-family: 'K2D', sans-serif;
     font-weight: lighter;
     
+}
+a{
+    outline: none;
+    color: black;
 }
 
 button{
@@ -272,7 +275,8 @@ form{
     border-bottom: 1px solid #707070;
     color: whitesmoke;
     font-size: 18px;
-    margin-bottom: 16px;   
+    margin-bottom: 16px; 
+    resize: none;
 }
 
 .form-control:focus{
@@ -331,16 +335,3 @@ footer p {
     font-family: 'Marck Script', cursive;
     padding-top: 4px;
 }
-
-
-
-
-
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-
