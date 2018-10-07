@@ -414,7 +414,7 @@ footer p {
       transform: none;
         }
         
-    #web,#android,#videdit{
+   /* #web,#android,#videdit{
       display: inline-block;
       vertical-align: middle;
       -webkit-transform: perspective(1px) translateZ(0);
@@ -424,13 +424,13 @@ footer p {
         transition-duration: 0.3s;
       -webkit-transition-property: transform;
       transition-property: transform;
-        }
+        } */
     
       #web:hover,#android:hover,#videdit:hover , #web:active,#android:active,#videdit:active , #web:focus,#android:focus#videdit:focus {
             -webkit-transform: scale(1.1);
             transform: scale(1.1);
             
-        }
+        } 
             
     #contact h1{
         font-size: 6em;
@@ -499,29 +499,47 @@ footer p {
     
     }
     
+    
     #whatIDo h1{
             font-size: 4em    
         }
 }
 
 /*------------iphone 5/SE----------*/
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 320px){
     #aboutme img{
             width: 200px;
             height: 200px;
         }
     
     #aboutme p{
-            font-size: 24px;
+            font-size: 22px;
         }
     
     #web,#android,#videdit{
         width: 270px;
         height: 90px;    
         }
+    
+    #whatIDo h1{
+            margin-bottom: auto;    
+        }
+    
+    .skillimg{
+        width: 70px;
+        height: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-left:  9px;
+        padding-bottom: 5px;
+        }
+    
      #contact h1{
         font-size: 3.5em;
         }
+    
     form .submit{
         letter-spacing: 1px;
     }
